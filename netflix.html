@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: white;
+    }
+
+    header {
+      background-color: #111;
+      padding: 1rem 2%;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      width: 100px;
+    }
+
+    main {
+      padding-top: 120px; 
+      text-align: center;
+    }
+
+    .banner {
+      position: relative;
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 2%;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .banner p {
+      font-size: 1.5rem;
+      max-width: 45rem;
+      margin-top: 1rem;
+    }
+
+    .movie-list {
+      display: flex;
+      overflow-x: scroll;
+      padding: 1rem 2%;
+    }
+
+    .movie {
+      flex: 0 0 auto;
+      margin-right: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .movie img {
+      width: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .movie:hover {
+      transform: scale(1.08);
+    }
+
+    .registration-box {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .registration-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .registration-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #e50914;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="netflix_logo.png" alt="Netflix Logo">
+  </header>
+
+  <main>
+    <div class="banner" style="background-image: url('banner.jpg');">
+      <h1>Welcome to Netflix</h1>
+      <p>Watch amazing movies and TV shows. Anytime. Anywhere.</p>
+    </div>
+
+    <div class="registration-box">
+      <h2>Join Netflix</h2>
+      <p>Enter your email to create an account</p>
+      <input type="email" placeholder="Email address">
+      <button>Get Started</button>
+    </div>
+
+    <div class="movie">
+        <p><br>
+            <br>
+        </p>
+    </div>
+
+    <div class="movie-list">
+      <div class="movie">
+        <img src="movie1.jpg" alt="Movie 1">
+      </div>
+      <div class="movie">
+        <img src="movie2.jpg" alt="Movie 2">
+      </div>
+      <div class="movie">
+        <img src="movie3.jpg" alt="Movie 3">
+      </div>
+      <div class="movie">
+        <img src="movie4.jpg" alt="Movie 4">
+      </div>
+      <div class="movie">
+        <img src="movie5.jpg" alt="Movie 5">
+      </div>
+      <div class="movie">
+        <img src="movie6.jpg" alt="Movie 6">
+      </div>
+      <div class="movie">
+        <img src="movie7.jpg" alt="Movie 2">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Netflix Clone</p>
+  </footer>
+
+</body>
+</html>
